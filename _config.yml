@@ -1,6 +1,6 @@
 # Site settings 配置站点
-title: '全新羽的编程世界'
-description: '全新羽的编程世界,barry'
+title: '清明上河图'
+description: '清明上河图,barry'
 keywords: 'barry'
 url: 'https://barryquan.github.io' # your host
 
@@ -16,16 +16,16 @@ nav: # 最佳体验 六个标签 且最好每个标签不超过4中文字
 author: true
 name: 'your awesome name'
 NickName: 'your awesome nickname'
-webtitle: 'your awesome webtitle'
-bio: 'your awesome bio'
+webtitle: '清明上河图'
+bio: '活在当世，何惧未来'
 about: true
-aboutyou: 'your introduction'
+aboutyou: '一个16年毕业的小小程序猿'
 portraits: '/assets/profile.jpeg' # your portraits image file path
 
 # SNS
 SNS: true
 SNS-icon: #['Facebook', 'weibo', 'qq', 'github', 'Dribbble', 'Twitter', 'instagram', 'weixin', 'Codepen']
-  mail: 'mailto:abc@gmail.com'
+  mail: 'mailto:barry@gmail.com'
   weixin: '' # 你的微信二维码存放的地址
   qq: '' # 你的qq二维码存放的地址 or http://wpa.qq.com/msgrd?v=3&uin='你的QQ号'&site=qq&menu=yes
   github: ''
