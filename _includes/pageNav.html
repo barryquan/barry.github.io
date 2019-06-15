@@ -15,27 +15,19 @@
         <a href="{{ "/" | relative_url }}" class="page-link-left" title="首页">&laquo;</a>
         {% endif %}
 
-        <!--
+        
         {% for count in (2..paginator.page) %}
         {% if count == paginator.page %}
-        <a href="javascript:;" class="page-link">{{count}}</a>
+        <a href="javascript:;" class="page-link-left">{{count}}</a>
         {% else %}
-        <a href="/page{{count}}" class="page-link">{{count}}</a>
+        <a href="/page{{count}}" class="page-link-left">{{count}}</a>
         {% endif %}
         {% endfor %}
-        -->
+        
         {% if paginator.next_page %}
-        <a href="javascript:;" class="page-link-left">{{ paginator.page }}</a>
+        <!--<a href="javascript:;" class="page-link-left">{{ paginator.page }}</a>-->
         <a href="/page{{ paginator.next_page }}/" class="page-link-right">&raquo;</a>
         {% endif %}
-        {% if paginator.page == paginator.total_pages %}
-        {% if paginator.total_pages == 1 %}
-          <a href="{{ "/" | relative_url }}" class="page-link-left" title="这已经是首页了">&laquo;</a>
-        {% else %}
-        <a href="javascript:;" class="page-link-left">{{ paginator.page }}</a>
-          <a href="/page{{ paginator.page }}" class="page-link-right" title="没有更多了">&raquo;</a>
-        {% endif %}
-      {% endif %}
     <!--</div>-->
 </div>
 </nav>
