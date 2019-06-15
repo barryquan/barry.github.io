@@ -27,17 +27,12 @@
         {% if paginator.next_page %}
         <a href="javascript:;" class="page-link-left">{{ paginator.page }}</a>
         <a href="/page{{ paginator.next_page }}/" class="page-link-right">&raquo;</a>
-        
-        <!--
-        {% else %}
-        <button disabled="disabled" href="javascript:;" class="page-link">&raquo;</button>
-        -->
         {% endif %}
         {% if paginator.page == paginator.total_pages %}
         {% if paginator.total_pages == 1 %}
           <a href="{{ "/" | relative_url }}" class="page-link-left" title="这已经是首页了">\</a>
         {% else %}
-          <a href="/page{{ paginator.page }}" class="page-link-right" title="没有更多了">{{ paginator.page }}</a>
+          <a href="/page{{ paginator.page }}" class="page-link-right" title="没有更多了">&raquo;</a>
         {% endif %}
       {% endif %}
     <!--</div>-->
