@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Welcome to Jekyll!"
-date:   2018-05-17 14:05:21 +0800
+date:   2018-05-17
 tags: 测试标签2
 color: rgb(255,90,90)
 cover: '../assets/profile1.jpg'
