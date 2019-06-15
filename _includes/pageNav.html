@@ -4,15 +4,15 @@
 
         {% if paginator.previous_page %}
           {% if paginator.previous_page == 1 %}
-          <a href="{{ "/" | relative_url }}" class="page-link">&laquo;</a>
+          <a href="{{ "/" | relative_url }}" class="page-link-left">&laquo;</a>
           {% else %}
 
-          <a href="/page{{ paginator.previous_page }}/" class="page-link">&laquo;</a>
+          <a href="/page{{ paginator.previous_page }}/" class="page-link-left">&laquo;</a>
           {% endif %}
         {% endif %}
 
         {% if paginator.page == 1 %}
-        <a href="{{ "/" | relative_url }}" class="page-link" title="首页">1</a>
+        <a href="{{ "/" | relative_url }}" class="page-link-left" title="首页">1</a>
         {% endif %}
 
         <!--
@@ -25,8 +25,9 @@
         {% endfor %}
         -->
         {% if paginator.next_page %}
-        <a href="/page{{ paginator.next_page }}/" class="page-link">&raquo;</a>
-        <span class="page-link">{{ paginator.page }}</span>
+        <a href="javascript:;" class="page-link-left">{{ paginator.page }}</a>
+        <a href="/page{{ paginator.next_page }}/" class="page-link-right">&raquo;</a>
+        
         <!--
         {% else %}
         <button disabled="disabled" href="javascript:;" class="page-link">&raquo;</button>
@@ -34,9 +35,9 @@
         {% endif %}
         {% if paginator.page == paginator.total_pages %}
         {% if paginator.total_pages == 1 %}
-          <a href="{{ "/" | relative_url }}" class="page-link" title="这已经是首页了">\</a>
+          <a href="{{ "/" | relative_url }}" class="page-link-left" title="这已经是首页了">\</a>
         {% else %}
-          <a href="/page{{ paginator.page }}" class="page-link" title="没有更多了">{{ paginator.page }}</a>
+          <a href="/page{{ paginator.page }}" class="page-link-right" title="没有更多了">{{ paginator.page }}</a>
         {% endif %}
       {% endif %}
     <!--</div>-->

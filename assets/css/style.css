@@ -284,13 +284,14 @@ a{
 .page-links{
   /*background-color: blue;*/
   height: 60px;
-  width: 120px;
+  width: 720px;
   border: 1px solid #e7eaf1;
   border-radius: 3px;
   margin: 0 auto;
   padding: 0 10px;
 }
-.page-link{
+/*上一页按钮*/
+.page-link-left{
   display: block;
   height: 40px;
   width: 40px;
@@ -304,7 +305,28 @@ a{
           transition-duration: .5s;
   color: #555;
 }
-.page-link:hover{
+/*下一页按钮*/
+.page-link-right{
+  display: block;
+  height: 40px;
+  width: 40px;
+  /*background-color: red;*/
+  float: left;
+  margin: 10px;
+  font-size: 30px;
+  line-height: 35px;
+  text-align: center;
+  -webkit-transition-duration: .5s;
+          transition-duration: .5s;
+  color: #555;
+}
+.page-link-right:hover{
+  background-color: #e7eaf1;
+  -webkit-transition-duration: .5s;
+          transition-duration: .5s;
+}
+
+.page-link-left:hover{
   background-color: #e7eaf1;
   -webkit-transition-duration: .5s;
           transition-duration: .5s;
