@@ -1,90 +1,93 @@
-# Site settings 配置站点
-title: '人生如戏'
-description: '人生如戏,barry'
-keywords: 'barry'
-url: 'https://barryquan.github.io' # your host
+# Welcome to Jekyll!
+#
+# This config file is meant for settings that affect your whole blog, values
+# which you are expected to set up once and rarely need to edit after that.
+# For technical reasons, this file is *NOT* reloaded automatically when you use
+# 'jekyll serve'. If you change this file, please restart the server process.
 
-# nav 中文字符空格：&emsp;
-nav: # 最佳体验 六个标签 且最好每个标签不超过4中文字
-  首页: '/'
-  标签: '/tags.html'
-  时间线: '/timeline.html'
-  关于博主: '/about.html'
-  友情链接: '/friendLink.html'
+# Site settings
+title: 人生如戏 # ex. I m Chuan
+name: 尚未配妥剑，转眼便江湖，历尽千帆后，归来仍少年！ # ex. DONGChuan
+email: my_email_address@lalala.com
+location: 中国,广州 # ex. Nice, France
+company: MyCompany
+company_url: my_company_website
+github_url: https://github.com/barryquan # ex. https://github.com/DONGChuan
+github_username: barryquan # ex. DONGChuan
+description: description_of_your_web_site
+favicon: favicon.png # Image must be in assets/images
+repository: barryquan/barryquan.github.io # ex. DONGChuan/DONGChuan.github.io
 
-# 博主
-author: true
-name: '全新羽'
-NickName: '人生如戏'
-webtitle: '人生如戏'
-bio: '活在当世，何惧未来'
-about: true
-aboutyou: '一个16年毕业的小小程序猿'
-portraits: '/assets/profile1.jpg' # your portraits image file path
+# The base hostname & protocol for your site
+# For local test, please use http://localhost:4000
+# For production, use your github page url. ex. http://dongchuan.github.io
+url: https://barryquan.github.io
 
-# SNS
-SNS: true
-SNS-icon: #['Facebook', 'weibo', 'qq', 'github', 'Dribbble', 'Twitter', 'instagram', 'weixin', 'Codepen']
-  #mail: 'mailto:barry@gmail.com'
-  weixin: '' # 你的微信二维码存放的地址
-  qq: 'https://wpa.qq.com/msgrd?v=3&uin=1359859903&site=qq&menu=yes' # 你的qq二维码存放的地址 or http://wpa.qq.com/msgrd?v=3&uin='你的QQ号'&site=qq&menu=yes
-  github: 'https://github.com/barryquan'
-  #Codepen: ''
-  #weibo: ''
-  #instagram: ''
-  #Twitter: ''
-  #Dribbble: ''
-  #Facebook: ''
-  #Google: ''
-  #zhihu: ''
-  #juejin: ''
-  #twitch: ''
+## Gem
+gems:
+  - jekyll-paginate
+  - jekyll-geo-pattern
+  - rouge
+  - kramdown
+  - jekyll-github-metadata
 
-# 分页
-paginate: 1
-paginatepath: ['page:num']
-
-# since
-footer:
-  since: 2018
-
-# Markdown
+# Build settings
 markdown: kramdown
+highlighter: rouge
+lsi:         false
+excerpt_separator: "\n\n"
+
+source:      .
+destination: ./_site
+
+quiet:    false
+defaults: []
+
 kramdown:
   input: GFM
-# 代码高亮 使用rouge
-highlighter: rouge
-# 代码高亮主题使用pygments主题: autumn\ default\ emacs\ friendly\ manni\ murphy\ pastie\ perldoc\ tango 任选一个你喜欢的主题名称填在下面的单引号中
-pygmentsTheme: 'default'
+  enable_coderay: true
 
-# 友情链接
-friends:
-  jekyll: 'https://www.jekyll.com.cn/'
+# Disque
+disque: my_disque_settings # ex. httpdongchuangithubio.disqus.com
 
-# 评论 最佳体验 在disqus、livere和Gitment之间三选一
-# disqus 评论
-disqus: false
-disqus_url: '' # https://abc.disqus.com/embed.js
-# 来必力评论
-livere: true
-livere_uid: 'MTAyMC8zNDI2OS8xMDgwNg==' # MTAyMC8zNDI2OS8xMDgwNg==
-# Gitment评论 OAuth Application
-Gitment: false
-Gitment_owner: ''  # github用户名
-Gitment_repo: ''  # github博客存放的仓库名
-client_id: ''  # 注册 OAuth Application 后获得的 client_id
-client_secret: ''  # 注册 OAuth Application 后获得的 client_secret
+# Pagination
+paginate: 1
+paginate_path: 'page:num'
 
-# Share : weibo, qq, wechat, tencent, douban, qzone, linkedin, diandian, facebook, twitter, google
-social-share: true
-social-share-items: ['qq', 'wechat', 'weibo', 'twitter', 'facebook']
+# Navigation. If you do not like these modules, just remove them :D
+navs:
+  -
+    href: /
+    label: Home
 
-# 百度统计 在baidu-url里填写自己相关的url代码
-baidu: true
-baidu-url: ''
-# 谷歌分析 在google-ID里填写自己在谷歌分析获得的追踪ID
-google: false
-google-ID: ''
+  -
+    href: /open-source
+    label: Open-Source
 
-# 博客头信息备选颜色（该部分在站点中不充当站点变量，将其写在post的头信息中用来充当页面变量）
-color: rgb(154,133,255) rgb(255,90,90) rgb(255,210,32) rgb(98,170,255)
+  -
+    href: /blog
+    label: Blog
+
+  -
+    href: /bookmark
+    label: Bookmark
+
+  -
+    href: /about
+    label: About
+
+# Sidebar to show popular repo
+side_bar_repo_limit: 5 # Number of repos to show
+
+# Google Analytics
+analytics :
+  provider : google
+  google :
+      tracking_id : 'tracking_id'  # ex. UA-72165600-X
+
+
+# For about.html. Fell free to create your own!
+skill_software_keywords: [Java, C, C++, Qt, Python, MySQL, Oracle, SQLite, PL/SQL, Design Patterns]
+skill_j2ee_keywords: [Spring, Struct, Hibernet, MyBatis, JSP]
+skill_web_keywords: [HTML, CSS, JS, JQuery, Ajax, AngularJS, NodeJS, ExpressJS, MongoDB, Redis, PHP, Symfony, Boostrap]
+skill_mobile_app_keywords: [Android, Sketch UI Desgin]
