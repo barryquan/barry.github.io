@@ -14,6 +14,7 @@
         <a href="{{ "/" | relative_url }}" class="page-link" title="首页">1</a>
         {% endif %}
 
+        <!--
         {% for count in (2..paginator.page) %}
         {% if count == paginator.page %}
         <a href="javascript:;" class="page-link">{{count}}</a>
@@ -21,13 +22,21 @@
         <a href="/page{{count}}" class="page-link">{{count}}</a>
         {% endif %}
         {% endfor %}
-
+        -->
         {% if paginator.next_page %}
         <a href="/page{{ paginator.next_page }}/" class="page-link">&raquo;</a>
+        <!--
         {% else %}
         <button disabled="disabled" href="javascript:;" class="page-link">&raquo;</button>
+        -->
         {% endif %}
-
+        {% if paginator.page == paginator.total_pages %}
+        {% if paginator.total_pages == 1 %}
+          <a href="{{ "/" | relative_url }}" class="page-link" title="这已经是首页了">\</a>
+        {% else %}
+          <a href="/page{{ paginator.page }}" class="page-link" title="没有更多了">{{ paginator.page }}</a>
+        {% endif %}
+      {% endif %}
     <!--</div>-->
 </div>
 </nav>
