@@ -76,22 +76,6 @@ navs:
     href: /about
     label: About
 
-# Sidebar to show popular repo
-side_bar_repo_limit: 5 # Number of repos to show
-
-# Google Analytics
-analytics :
-  provider : google
-  google :
-      tracking_id : 'tracking_id'  # ex. UA-72165600-X
-
-
-# For about.html. Fell free to create your own!
-skill_software_keywords: [Java, C, C++, Qt, Python, MySQL, Oracle, SQLite, PL/SQL, Design Patterns]
-skill_j2ee_keywords: [Spring, Struct, Hibernet, MyBatis, JSP]
-skill_web_keywords: [HTML, CSS, JS, JQuery, Ajax, AngularJS, NodeJS, ExpressJS, MongoDB, Redis, PHP, Symfony, Boostrap]
-skill_mobile_app_keywords: [Android, Sketch UI Desgin]
-
 # 首页右边栏目
 classes:
 
@@ -109,3 +93,19 @@ classes:
     href: /java.html
     name: Java
     describe: Java 之根基，Java 程序员必学
+
+# Sidebar to show popular repo
+side_bar_repo_limit: 5 # Number of repos to show
+
+# Google Analytics
+#analytics :
+  #provider : google
+  #google :
+      #tracking_id : 'tracking_id'  # ex. UA-72165600-X
+
+
+# For about.html. Fell free to create your own!
+skill_software_keywords: [Java, C, C++, Qt, Python, MySQL, Oracle, SQLite, PL/SQL, Design Patterns]
+skill_j2ee_keywords: [Spring, Struct, Hibernet, MyBatis, JSP]
+skill_web_keywords: [HTML, CSS, JS, JQuery, Ajax, AngularJS, NodeJS, ExpressJS, MongoDB, Redis, PHP, Symfony, Boostrap]
+skill_mobile_app_keywords: [Android, Sketch UI Desgin]
