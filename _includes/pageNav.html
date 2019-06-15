@@ -12,7 +12,7 @@
         {% endif %}
 
         {% if paginator.page == 1 %}
-        <a href="{{ "/" | relative_url }}" class="page-link-left" title="首页">1</a>
+        <a href="{{ "/" | relative_url }}" class="page-link-left" title="首页">&laquo;</a>
         {% endif %}
 
         <!--
@@ -30,8 +30,9 @@
         {% endif %}
         {% if paginator.page == paginator.total_pages %}
         {% if paginator.total_pages == 1 %}
-          <a href="{{ "/" | relative_url }}" class="page-link-left" title="这已经是首页了">\</a>
+          <a href="{{ "/" | relative_url }}" class="page-link-left" title="这已经是首页了">&laquo;</a>
         {% else %}
+        <a href="javascript:;" class="page-link-left">{{ paginator.page }}</a>
           <a href="/page{{ paginator.page }}" class="page-link-right" title="没有更多了">&raquo;</a>
         {% endif %}
       {% endif %}
