@@ -1,37 +1,33 @@
-{% if paginator.page > 1 %}
-<div class="pagination text-align">
-    <div class="btn-group">
+<nav class="pagination">
+<div class="page-links">
+    <!--<div class="btn-group">-->
 
         {% if paginator.previous_page %}
-        {% if paginator.previous_page == 1 %}
-        <a href="/" class="btn btn-outline">&laquo;</a>
-        {% else %}
-        <a href="/page{{paginator.previous_page}}" class="btn btn-outline">&laquo;</a>
-        {% endif %}
-        {% else %}
-        <button disabled="disabled" href="javascript:;" class="btn btn-outline">&laquo;</button>
+          {% if paginator.previous_page == 1 %}
+          <a href="{{ "/" | relative_url }}" class="page-link">&laquo;</a>
+          {% else %}
+          <a href="/page{{ paginator.previous_page }}/" class="page-link">&laquo;</a>
+          {% endif %}
         {% endif %}
 
         {% if paginator.page == 1 %}
-        <a href="javascript:;" class="active btn btn-outline">1</a>
-        {% else %}
-        <a href="/" class="btn btn-outline">1</a>
+        <a href="{{ "/" | relative_url }}" class="page-link" title="首页">1</a>
         {% endif %}
 
         {% for count in (2..paginator.page) %}
         {% if count == paginator.page %}
-        <a href="javascript:;" class="active btn btn-outline">{{count}}</a>
+        <a href="javascript:;" class="page-link">{{count}}</a>
         {% else %}
-        <a href="/page{{count}}" class="btn btn-outline">{{count}}</a>
+        <a href="/page{{count}}" class="page-link">{{count}}</a>
         {% endif %}
         {% endfor %}
 
         {% if paginator.next_page %}
-        <a href="/page{{paginator.next_page}}" class="btn btn-outline">&raquo;</a>
+        <a href="/page{{ paginator.next_page }}/" class="page-link">&raquo;</a>
         {% else %}
-        <button disabled="disabled" href="javascript:;" class="btn btn-outline">&raquo;</button>
+        <button disabled="disabled" href="javascript:;" class="page-link">&raquo;</button>
         {% endif %}
 
-    </div>
+    <!--</div>-->
 </div>
-{% endif %}
+</nav>
