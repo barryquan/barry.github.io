@@ -1,6 +1,6 @@
 # Site settings 配置站点
-title: '清明上河图'
-description: '清明上河图,barry'
+title: '人生如戏'
+description: '人生如戏,barry'
 keywords: 'barry'
 url: 'https://barryquan.github.io' # your host
 
@@ -16,11 +16,11 @@ nav: # 最佳体验 六个标签 且最好每个标签不超过4中文字
 author: true
 name: '全新羽'
 NickName: '人生如戏'
-webtitle: '清明上河图'
+webtitle: '人生如戏'
 bio: '活在当世，何惧未来'
 about: true
 aboutyou: '一个16年毕业的小小程序猿'
-portraits: '/assets/profile.jpeg' # your portraits image file path
+portraits: '/assets/profile1.jpg' # your portraits image file path
 
 # SNS
 SNS: true
