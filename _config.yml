@@ -14,7 +14,7 @@ location: 中国,广州 # ex. Nice, France
 #company_url: my_company_website
 github_url: https://github.com/barryquan # ex. https://github.com/DONGChuan
 github_username: barryquan # ex. DONGChuan
-description: description_of_your_web_site
+description: 人生如戏,barry,java,spring,spring boot
 favicon: favicon.png # Image must be in assets/images
 repository: barryquan/barryquan.github.io # ex. DONGChuan/DONGChuan.github.io
 
@@ -91,3 +91,21 @@ skill_software_keywords: [Java, C, C++, Qt, Python, MySQL, Oracle, SQLite, PL/SQ
 skill_j2ee_keywords: [Spring, Struct, Hibernet, MyBatis, JSP]
 skill_web_keywords: [HTML, CSS, JS, JQuery, Ajax, AngularJS, NodeJS, ExpressJS, MongoDB, Redis, PHP, Symfony, Boostrap]
 skill_mobile_app_keywords: [Android, Sketch UI Desgin]
+
+# 首页右边栏目
+classes:
+
+  -
+    href: /life.html
+    name: 我的故事
+    describe: 生活就是故事，故事就是生活
+
+  -
+    href: /arch.html
+    name: 架构师之路
+    describe: 一个架构师的自我修养
+
+  -
+    href: /java.html
+    name: Java
+    describe: Java 之根基，Java 程序员必学
